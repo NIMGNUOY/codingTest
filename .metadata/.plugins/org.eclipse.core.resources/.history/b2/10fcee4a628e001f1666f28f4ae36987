@@ -1,0 +1,14 @@
+package codingTest.test;
+
+import org.springframework.transaction.annotation.Transactional;
+
+import lombok.RequiredArgsConstructor;
+
+@org.springframework.stereotype.Service
+@Transactional
+@RequiredArgsConstructor
+public class ServiceImpl {
+	
+	private final Service;
+
+}

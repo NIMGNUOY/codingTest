@@ -1,0 +1,12 @@
+.btn {
+  font-size: 25px;
+}
+
+.playerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.playerContainer button {
+  margin-left: 10px;
+}

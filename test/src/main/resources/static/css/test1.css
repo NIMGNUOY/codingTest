@@ -1,0 +1,22 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  cursor: pointer;
+}
+
+.area > p {
+  font-size: 20px;
+  font-weight: bold;
+}

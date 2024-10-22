@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test7</title>
+
+    <link rel="stylesheet" href="/css/test7.css">
+  </head>
+  <body>
+    
+    <h1>묵찌빠로 야구 게임을 작성 하시오.</h1>
+
+    <pre>참고 사이트 : https://wikidocs.net/211348</pre>
+
+    <div class="playerContainer">
+
+      <h2>플레이어 : </h2>
+
+      <button name="rps" class="btn" value="scissors" onclick="playGame('scissors')">가위</button>
+      <button name="rps" class="btn" value="rock" onclick="playGame('rock')">바위</button>
+      <button name="rps" class="btn" value="paper" onclick="playGame('paper')">보</button>
+
+    </div>
+
+    <div class="resultContainer">
+
+      <h2>게임 결과 : </h2>
+      <p id="message"></p>
+      <ul>
+        <li>플레이어 선택 : <span id="playerChoice"></span></li>
+        <li>컴퓨터 선택 : <span id="computerChoice"></span></li>
+      </ul>
+
+      <div>
+
+        <span>|</span>
+        <span id="score">점수</span>
+        <span>|</span>
+        <span id="attempts">진행한 횟수</span>
+        <span>|</span>
+        <span id="draws">비긴 횟수</span>
+        <span>|</span>
+        <span>승률</span>
+        <span>|</span>
+
+      </div>
+
+    </div>
+
+    <script src="/js/test7.js"></script>
+  </body>
+</html>

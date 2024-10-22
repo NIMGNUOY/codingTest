@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test4</title>
+  </head>
+  <body>
+
+    <h1>2번에 작성한 테이블을 전체 조회하여 java를 사용하여 계층 형태로 출력하는 프로그램 로직을 작성 하시오.</h1>
+    
+    <th:block th:each="org : ${orgList}">
+
+      <pre th:text="${org.orgName}"></pre>
+
+    </th:block>
+
+  </body>
+</html>

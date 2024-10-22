@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test3</title>
+  </head>
+  <body>
+
+    <h1>2번에 작성한 테이블을 이용하여 전체 조직이 계층 형태로 출력하는 쿼리를 작성 하시오.</h1>
+
+    <pre>
+      SELECT LPAD(' ', 2 * (LEVEL - 1)) || ORG_NAME AS ORG_NAME, ORG_ID, PARENT_ORG_ID
+      FROM ORGANIZATION
+      START WITH PARENT_ORG_ID IS NULL
+      CONNECT BY PRIOR ORG_ID = PARENT_ORG_ID
+      ORDER SIBLINGS BY ORG_ID;
+    </pre>
+    
+  </body>
+</html>

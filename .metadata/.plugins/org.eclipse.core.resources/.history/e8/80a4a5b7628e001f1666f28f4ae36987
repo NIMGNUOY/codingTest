@@ -1,0 +1,6 @@
+package codingTest.test;
+
+@org.apache.ibatis.annotations.Mapper
+public interface Mapper {
+
+}
