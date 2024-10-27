@@ -20,8 +20,8 @@ btn.addEventListener("click", () => {
   
       });
       table.appendChild(tr);
-      console.log(table);
     });
+    console.log(table);
   
   }).catch(err => console.log('error', err));
 

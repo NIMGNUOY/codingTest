@@ -78,6 +78,9 @@ public class MainController {
 		int row = random.nextInt(size);
 		int col = random.nextInt(size);
 		
+		System.out.println("row : " + row);
+		System.out.println("col : " + col);
+		
 		for(int num = 1; num <= size * size; num ++) {
 			square[row][col] = num;
 			
@@ -93,14 +96,14 @@ public class MainController {
 			
 		}
 		
-//		System.out.println(size * size);
-//		System.out.println("생성된 마방진:");
-//		for (int i = 0; i < square.length; i++) {
-//		    for (int j = 0; j < square[i].length; j++) {
-//		        System.out.print(square[i][j] + " ");
-//		    }
-//		    System.out.println();
-//		}
+		System.out.println(size * size);
+		System.out.println("생성된 마방진:");
+		for (int i = 0; i < square.length; i++) {
+		    for (int j = 0; j < square[i].length; j++) {
+		        System.out.print(square[i][j] + " ");
+		    }
+		    System.out.println();
+		}
 		
 		return square;
 	}
